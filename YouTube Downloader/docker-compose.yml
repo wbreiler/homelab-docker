@@ -19,7 +19,7 @@ services:
       - TA_USERNAME=tubearchivist           # your initial TA credentials
       - TA_PASSWORD=verysecret              # your initial TA credentials
       - ELASTIC_PASSWORD=verysecret         # set password for Elasticsearch
-      - TZ=America/New_York                 # set your time zone
+      - TZ=America/Chicago                 # set your time zone
     depends_on:
       - archivist-es
       - archivist-redis
