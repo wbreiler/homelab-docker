@@ -11,10 +11,14 @@ services:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
       CF_API_KEY: "$$2a$$10$$L.kxaQIbyN6Q5web2/4fRut3zIxReWFjxjc2mlA/k2PfZwYTagBVa"
-      CF_SLUG: "all-the-forge-6-atf6"
-      CF_PARALLEL_DOWNLOADS: "6"
+      CF_SLUG: "better-mc-fabric-bmc1"
       DEBUG: "TRUE"
       MEMORY: "8G"
+      ICON: "https://cdn.discordapp.com/attachments/859595920202006540/1119960834345545818/FB_IMG_1687089861079.jpg"
+      SPAWN_PROTECTION: "0"
+      MOTD: "i'm the cum man"
+      OPS: "Resisterefutilis"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./docker-mc:/data
+      - ./modpacks:/modpacks
