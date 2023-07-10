@@ -11,7 +11,7 @@ services:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
       CF_API_KEY: "$$2a$$10$$L.kxaQIbyN6Q5web2/4fRut3zIxReWFjxjc2mlA/k2PfZwYTagBVa"
-      CF_SLUG: "better-mc-fabric-bmc1"
+      CF_SLUG: "better-mc-forge-bmc3"
       DEBUG: "TRUE"
       MEMORY: "8G"
       ICON: "https://cdn.discordapp.com/attachments/859595920202006540/1119960834345545818/FB_IMG_1687089861079.jpg"
