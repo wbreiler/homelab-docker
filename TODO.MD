@@ -45,7 +45,7 @@
 	- [ ] Install [Duplicati](https://nwgat.ninja/installing-duplicati-on-ubuntu-24-04-lts/)
 		- [ ] Enable access from any computer on the network
 			- [ ] `sudo nano /etc/defauts/duplicati`
-			- [ ] `DAEMON_OPTS="--webservice-interface=any --webservice-port=8200"` Homelab Docker
+			- [ ] `DAEMON_OPTS="--webservice-interface=any --webservice-port=8200"`
 
 - [ ] Install Ubuntu Server
 	- [ ] Format drives to EXT4
