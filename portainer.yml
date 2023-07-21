@@ -8,5 +8,5 @@ services:
         restart: always
         volumes:
             - '/var/run/docker.sock:/var/run/docker.sock'
-            - '/mnt/data/docker/portainer:/data'
+            - '/mnt/beta/portainer:/data'
         image: 'portainer/portainer-ee:latest'

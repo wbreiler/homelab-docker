@@ -20,5 +20,5 @@ services:
       OPS: "Resisterefutilis"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - /mnt/data/docker/docker-mc:/data
-      - /mnt/data/docker/modpacks:/modpacks
+      - /mnt/beta/minecraft/server:/data
+      - /mnt/beta/minecraft/modpacks:/modpacks

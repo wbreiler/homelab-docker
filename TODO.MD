@@ -1,0 +1,95 @@
+# Homelab Docker
+
+- [ ] Install Ubuntu Server
+	- [ ] Format drives to EXT4
+	- [ ] Mount 2TB NVMe to `/mnt/beta`
+	- [ ] Mount 4TB HDD to `/mnt/kappa`
+	- [ ] Change drive permissions
+		- [ ] `cd /mnt/beta/; sudo clown nobody:nogroup`
+		- [ ] `cd /mnt/kappa/; sudo clown nobody:nogroup`
+- [ ] Install Docker
+	- [ ] `sudo apt update`
+	- [ ] `sudo apt install apt-transport-https ca-certificates curl software-properties-common`
+	- [ ] `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+	- [ ] `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"`
+	- [ ] `sudo apt install docker-ce`
+- [ ] Install Docker Compose
+	- [ ] `sudo apt-get update`
+	- [ ] `sudo apt-get install docker-compose-plugin`
+- [ ] Setup Docker containers
+	- [ ] [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker)
+		- Server ID: 1764
+	- [ ] [YouTube Archive](https://github.com/tubearchivist/tubearchivist)
+		- [ ] Set max download res to 1440p
+		- [ ] Add YouTube channels
+			- [ ] Jeff Geerling
+			- [ ] Level1Techs
+			- [ ] Tom Scott
+			- [ ] DankPods
+			- [ ] Half as Interesting
+			- [ ] LTT
+			- [ ] Snazzy Labs
+	- [ ] [Gitea](https://docs.gitea.com/next/installation/install-with-docker)
+		- [ ] Set up Linux source mirror
+	- [ ] [Portainer]()
+		- Business Edition Key: `2-5kAH/WMmCHmbIqUPEDquvlag8RwBSfvFu1pklrD5hPxuclatAev0/ugQ1FO7mnP0P+pqwbYlYpfqjAZPXNCFXQ==`
+	- [ ] [Minecraft Server]()
+- [ ] Install [Cockpit](https://cockpit-project.org/)
+- [ ] Install [Netdata](https://github.com/netdata/netdata)
+	- [ ] `wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token IKdB06VqolPGsPtOu9Uc3aZIZSVEzLihQ5S7vpc8zQo7bwcl292Q4cx-xiC_bgj77sPGk9JmLvoTwysO4D4p5fZxRBeYjvsiHdHooil9cU3sq34tlgpddYqoPPKfkWQm_5KdAk8 --claim-rooms 09542200-1f4c-4554-a80f-9e5231b8e284 --claim-url https://app.netdata.cloud`
+- [ ] Install [Tailscale](https://tailscale.com/download/linux)
+	- [ ] `curl -fsSL https://tailscale.com/install.sh | sh`
+- [ ] Set up B2 Docker backups
+	- keyID: 004fbe28c0d02b5000000000e
+	- applicationKey: K004TVmRySG4VKrfc0hOYugw8/iu8Bk
+	- [ ] Install [Duplicati](https://nwgat.ninja/installing-duplicati-on-ubuntu-24-04-lts/)
+		- [ ] Enable access from any computer on the network
+			- [ ] `sudo nano /etc/defauts/duplicati`
+			- [ ] `DAEMON_OPTS="--webservice-interface=any --webservice-port=8200"` Homelab Docker
+
+- [ ] Install Ubuntu Server
+	- [ ] Format drives to EXT4
+	- [ ] Mount 2TB NVMe to `/mnt/beta`
+	- [ ] Mount 4TB HDD to `/mnt/kappa`
+	- [ ] Change drive permissions
+		- [ ] `cd /mnt/beta/; sudo clown nobody:nogroup`
+		- [ ] `cd /mnt/kappa/; sudo clown nobody:nogroup`
+- [ ] Install Docker
+	- [ ] `sudo apt update`
+	- [ ] `sudo apt install apt-transport-https ca-certificates curl software-properties-common`
+	- [ ] `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+	- [ ] `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"`
+	- [ ] `sudo apt install docker-ce`
+- [ ] Install Docker Compose
+	- [ ] `sudo apt-get update`
+	- [ ] `sudo apt-get install docker-compose-plugin`
+- [ ] Setup Docker containers
+	- [ ] [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker)
+		- Server ID: 1764
+	- [ ] [YouTube Archive](https://github.com/tubearchivist/tubearchivist)
+		- [ ] Set max download res to 1440p
+		- [ ] Add YouTube channels
+			- [ ] Jeff Geerling
+			- [ ] Level1Techs
+			- [ ] Tom Scott
+			- [ ] DankPods
+			- [ ] Half as Interesting
+			- [ ] LTT
+			- [ ] Snazzy Labs
+	- [ ] [Gitea](https://docs.gitea.com/next/installation/install-with-docker)
+		- [ ] Set up Linux source mirror
+	- [ ] [Portainer]()
+		- Business Edition Key: `2-5kAH/WMmCHmbIqUPEDquvlag8RwBSfvFu1pklrD5hPxuclatAev0/ugQ1FO7mnP0P+pqwbYlYpfqjAZPXNCFXQ==`
+	- [ ] [Minecraft Server]()
+- [ ] Install [Cockpit](https://cockpit-project.org/)
+- [ ] Install [Netdata](https://github.com/netdata/netdata)
+	- [ ] `wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token IKdB06VqolPGsPtOu9Uc3aZIZSVEzLihQ5S7vpc8zQo7bwcl292Q4cx-xiC_bgj77sPGk9JmLvoTwysO4D4p5fZxRBeYjvsiHdHooil9cU3sq34tlgpddYqoPPKfkWQm_5KdAk8 --claim-rooms 09542200-1f4c-4554-a80f-9e5231b8e284 --claim-url https://app.netdata.cloud`
+- [ ] Install [Tailscale](https://tailscale.com/download/linux)
+	- [ ] `curl -fsSL https://tailscale.com/install.sh | sh`
+- [ ] Set up B2 Docker backups
+	- keyID: 004fbe28c0d02b5000000000e
+	- applicationKey: K004TVmRySG4VKrfc0hOYugw8/iu8Bk
+	- [ ] Install [Duplicati](https://nwgat.ninja/installing-duplicati-on-ubuntu-24-04-lts/)
+		- [ ] Enable access from any computer on the network
+			- [ ] `sudo nano /etc/defauts/duplicati`
+			- [ ] `DAEMON_OPTS="--webservice-interface=any --webservice-port=8200"` 
