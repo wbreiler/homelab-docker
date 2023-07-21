@@ -31,9 +31,13 @@
 			- [ ] Snazzy Labs
 	- [ ] [Gitea](https://docs.gitea.com/next/installation/install-with-docker)
 		- [ ] Set up Linux source mirror
-	- [ ] [Portainer]()
+		- [ ] Set up local `apt` mirror
+		- [ ] Set up local [Docker Hub](https://hub.docker.com/) mirror
+		- [ ] Move `docker-compose` files
+	- [ ] [Portainer](https://www.portainer.io/)
 		- Business Edition Key: `2-5kAH/WMmCHmbIqUPEDquvlag8RwBSfvFu1pklrD5hPxuclatAev0/ugQ1FO7mnP0P+pqwbYlYpfqjAZPXNCFXQ==`
-	- [ ] [Minecraft Server]()
+	- [ ] [Minecraft Server](https://github.com/itzg/docker-minecraft-server)
+	- [ ] [Pi-hole](https://pi-hole.net/)
 - [ ] Install [Cockpit](https://cockpit-project.org/)
 - [ ] Install [Netdata](https://github.com/netdata/netdata)
 	- [ ] `wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token IKdB06VqolPGsPtOu9Uc3aZIZSVEzLihQ5S7vpc8zQo7bwcl292Q4cx-xiC_bgj77sPGk9JmLvoTwysO4D4p5fZxRBeYjvsiHdHooil9cU3sq34tlgpddYqoPPKfkWQm_5KdAk8 --claim-rooms 09542200-1f4c-4554-a80f-9e5231b8e284 --claim-url https://app.netdata.cloud`
