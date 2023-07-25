@@ -1,6 +1,16 @@
 #!/bin/bash
 
-# Function to check if Docker is already installed
+# Install Cockpit first
+chmod +x scripts/install_cockpit.sh
+./scripts/install_cockpit.sh
+
+
+# Install Netdata
+# chmod +x scripts/install_netdata.sh
+# ./scripts/install_netdata.sh
+sh /home/ubuntu/scripts/netdata-kickstart.sh --disable-telemetry
+
+#Function to check if Docker is already installed
 check_docker_installed() {
     if command -v docker &>/dev/null; then
         echo "Docker is already installed on your system."
@@ -29,6 +39,9 @@ install_docker() {
     # Install Docker
     sudo apt-get update
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+    # Add user to Docker group
+    sudo usermod -aG docker "$USER"
 
     echo "Docker has been installed successfully!"
     echo "Current Docker version:"
@@ -59,5 +72,10 @@ else
     exit 0
 fi
 
-chmod +x install_compose.sh
-./install_compose.sh
+# Install Docker Compose
+chmod +x scripts/install_compose.sh
+./scripts/install_compose.sh
+
+# Start containers via docker-compose
+chmod +x scripts/start_containers.sh
+sudo ./scripts/start_containers.sh

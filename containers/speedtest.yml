@@ -11,7 +11,7 @@ services:
             - TZ=America/Chicago
         volumes:
             - '/etc/localtime:/etc/localtime:ro'
-            - '/mnt/beta/speedtest/config:/config'
-            - '/mnt/beta/speedtest/web:/etc/ssl/web'
+            - './speedtest/config:/config'
+            - './speedtest/web:/etc/ssl/web'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
         restart: unless-stopped
