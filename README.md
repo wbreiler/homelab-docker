@@ -1,3 +1,7 @@
+# NOTICE: Further development and updates will be posted [here](http://git.wbreiler.com/wbreiler/homelab-docker).
+# This is the final update to this repository
+
+
 # Containerized homelab
 
 This project provides a collection of Docker-compose files and configurations for running various services in a home lab environment.
