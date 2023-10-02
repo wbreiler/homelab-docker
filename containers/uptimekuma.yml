@@ -1,0 +1,11 @@
+version: '3'
+services:
+  uptime-kuma:
+    container_name: uptime-monitor
+    image: louislam/uptime-kuma
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./uptimemonitor/data:/app/data
+    stdin_open: true
+    restart: always

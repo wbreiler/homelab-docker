@@ -4,7 +4,7 @@ services:
         container_name: speedtest-tracker
         ports:
             - '8080:80'
-            - '8443:443'
+            - '8444:443'
         environment:
             - PUID=1000
             - PGID=1000
