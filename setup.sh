@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]
 fi
 echo "Welcome to my homelab installation and bootstrapping script"
 
-# Install Cockpit first
+
 # Check if Cockpit is already installed
 check_cockpit_installed() {
     if command -v cockpit &>/dev/null; then
@@ -17,6 +17,7 @@ check_cockpit_installed() {
     fi
 }
 
+# Function to install Cockpit
 install_cockpit() {
   echo "Installing Cockpit..."
   sudo apt update
@@ -38,6 +39,7 @@ echo "Do you want to continue? (y/n)"
 
 read -r response
 
+# Install Cockpit
 if [[ "$response" =~ ^[Yy]$ ]]; then
     if check_cockpit_installed; then
         echo "Do you still want to proceed with the installation? (y/n)"
@@ -56,7 +58,7 @@ fi
 
 
 # Install Netdata
-sh /home/ubuntu/scripts/netdata-kickstart.sh --disable-telemetry
+sh $HOME/scripts/netdata-kickstart.sh --disable-telemetry
 
 #Function to check if Docker is already installed
 check_docker_installed() {
@@ -176,7 +178,7 @@ start_compose() {
 }
 
 # Check if any Docker Compose files are present in the containers directory
-compose_files=$(ls containers/*.yml 2>/dev/null)
+compose_files=$(ls $HOME/containers/*.yml 2>/dev/null)
 if [ -n "$compose_files" ]; then
   echo "Found Docker Compose files in the containers directory."
 

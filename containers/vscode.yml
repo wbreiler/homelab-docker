@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - '/mnt/beta/vscode/config:/config'
+      - '$HOME/vscode/config:/config'
     image: lscr.io/linuxserver/code-server
     restart: unless-stopped
 

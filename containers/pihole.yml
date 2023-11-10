@@ -16,8 +16,8 @@ services:
       WEBPASSWORD: '@Sofie3722'
     # Volumes store your data between container upgrades
     volumes:
-      - '/mnt/beta/pihole/data:/etc/pihole'
-      - '/mnt/beta/pihole/dnsmasq:/etc/dnsmasq.d'
+      - '$HOME/pihole/data:/etc/pihole'
+      - '$HOME/pihole/dnsmasq:/etc/dnsmasq.d'
     cap_add:
       - NET_ADMIN # Required if you are using Pi-hole as your DHCP server, else not needed
     restart: unless-stopped
