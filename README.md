@@ -1,4 +1,4 @@
-# Containerized homelab
+# Containerized Homelab
 
 This project provides a collection of Docker-compose files and configurations for running various services in a home lab environment.
 
