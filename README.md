@@ -13,21 +13,24 @@ This project provides a collection of Docker-compose files and configurations fo
 
 1. Clone this repository:
 ```shell
-git clone https://github.com/wbreiler/homelab-docker.git
+$ git clone https://github.com/wbreiler/homelab-docker.git
 ```
 2. Navigate to the project directory:
 ```shell
-cd homelab-docker
+$ cd homelab-docker
 ```
 3. Customize the files in [/containers](containers/)
 
-4. Run `setup.sh`
+4. Run the [setup script](scripts/setup.sh), and follow the prompts:
+```shell
+$ sh scripts/setup.sh
+```
 
 ## Services
 
-- `dashboard.yml` is a dashboard for all of the services, so you don't have to remember all the IPs and ports
-- `gitea.yml` is a locally hosted Git instance, similar to GitHub or GitLab
-- Further information can be found [here](containers/README.MD)
+- [`dashboard.yml`](containers/dashboard.yml) is a dashboard for all of the services, so you don't have to remember all the IPs and ports. [GitHub](https://github.com/pawelmalak/flame)
+- [`gitea.yml`](containers/gitea.yml) is a locally hosted Git instance, similar to GitHub or GitLab. [GitHub](https://github.com/go-gitea/gitea) [Website](https://about.gitea.com/)
+- [`uptimekuma.yml`](containers/uptimekuma.yml) is a self-hosted uptime monitor, with support for Discord, Slack, and SMS notifications. [GitHub](https://github.com/louislam/uptime-kuma)
 
 ## Contributing
 
