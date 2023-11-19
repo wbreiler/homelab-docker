@@ -58,7 +58,7 @@ fi
 
 
 # Install Netdata
-sh $HOME/scripts/netdata-kickstart.sh --disable-telemetry
+sh $pwd/netdata-kickstart.sh --disable-telemetry
 
 #Function to check if Docker is already installed
 check_docker_installed() {
@@ -75,7 +75,7 @@ check_docker_installed() {
 # Function to install Docker on Ubuntu
 install_docker() {
     echo "Installing Docker on Ubuntu..."
-    
+
     # Update the package index and install required dependencies
     sudo apt-get update
     sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
