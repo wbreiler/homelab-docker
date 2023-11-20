@@ -11,20 +11,22 @@ This project provides a collection of Docker-compose files and configurations fo
 
 ## Installation
 
-1. Clone this repository:
+- Clone this repository:
 ```shell
 $ git clone https://github.com/wbreiler/homelab-docker.git
 ```
-2. Navigate to the project directory:
+- Navigate to the project directory:
 ```shell
 $ cd homelab-docker
 ```
-3. Customize the files in [/containers](containers/)<sup>2</sup>
+- Customize the files in [/containers](containers/)<sup>2</sup>
 
-4. Run the [setup script](scripts/setup.sh), and follow the prompts:
+- Run the [setup script](scripts/setup.sh), and follow the prompts:
 ```shell
 $ sh scripts/setup.sh
 ```
+  - a
+
 
 ## Services
 
