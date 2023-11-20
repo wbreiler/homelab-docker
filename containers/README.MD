@@ -55,4 +55,4 @@ Below are a list of containers that expect there to be a `/mnt/dockerdata` direc
 - [`lancache.yml`](lancache.yml)<sup>1</sup>
 
 ## Notes
-<sup>1</sup>: This is stored in [`.cacheenv`](.cacheenv) under `CACHE_ROOT`
+<sup>1</sup>: This is stored in [`.cacheenv`](.cacheenv) under `CACHE_ROOT`.
