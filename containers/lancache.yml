@@ -3,7 +3,7 @@ x-restart-policy: &restart-policy "no"
 services:
   dns:
     image: lancachenet/lancache-dns:latest
-    env_file: .env
+    env_file: .cacheenv
     restart: *restart-policy
     ports:
       - ${DNS_BIND_IP}:53:53/udp
