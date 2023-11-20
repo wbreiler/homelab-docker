@@ -25,7 +25,7 @@ $ cd homelab-docker
 ```shell
 $ sh scripts/setup.sh
 ```
-- If you wish to only run a specific container, or don't want to install Cockpit:
+- If you wish to only run a specific container, or don't want to install Cockpit<sup>3</sup>:
 ```shell
 $ cd containers
 $ docker compose -f [compose file] up -d
@@ -48,4 +48,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Notes
 <sup>1</sup>: [`setup.sh`](scripts/setup.sh) is written with Debian-based distros in mind. Therefore, it should work with Debian, Ubuntu, and their variants. If you wish to create a PR or fork with support for other distros, go for it!</br>
-<sup>2</sup>: Some of the docker-compose files in [./containers](containers/) assume that there's a `/mnt/dockerdata` directory. If you either don't have that directory, or it's under a different location/name, update the file(s) accordingly.
+<sup>2</sup>: Some of the docker-compose files in [./containers](containers/) assume that there's a `/mnt/dockerdata` directory. If you either don't have that directory, or it's under a different location/name, update the file(s) accordingly.</br>
+<sup>3</sup>: 
