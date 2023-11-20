@@ -178,7 +178,7 @@ start_compose() {
 }
 
 # Check if any Docker Compose files are present in the containers directory
-compose_files=$(ls $HOME/containers/*.yml 2>/dev/null)
+compose_files=$(ls $PWD/containers/*.yml 2>/dev/null)
 if [ -n "$compose_files" ]; then
   echo "Found Docker Compose files in the containers directory."
 
