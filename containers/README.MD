@@ -4,10 +4,13 @@ This directory contains the Docker Compose files I have currently running in my 
 
 ## Getting Started
 
-Below are a list of the Docker Compose files in this directory, and how to use or edit them.
+Below are a list of a couple of the Docker Compose files in this directory, and how to use or edit them.
 
 ## Dashboard
-[`dashboard.yml`](dashboard.yml) is a dashboard for all your apps, and can even host bookmarks. By default, data is stored in `$HOME/dashboard`. If you wish to have it password protected, you must have a `password` file in your `$HOME` directory. If you wish to not have it password protected, remove the following:
+[`dashboard.yml`](dashboard.yml) is a dashboard for all your apps, and can even host bookmarks. By default, data is stored in `$HOME/dashboard`.
+
+#### Password file
+If you wish to have it password protected, you must have a `password` file in your `$HOME` directory. If you wish to not have it password protected, remove the following:
 ```diff
 -    secrets:
 -      - password # optional but required for (1)
@@ -22,6 +25,7 @@ Below are a list of the Docker Compose files in this directory, and how to use o
 -    file: $HOME/password
 
 ```
+#### Port change
 By default, it uses port `5005`. If you have another service using port `5005`, you can change it by changing the following line (I'll be using port `8181` as an example):
 ```diff
 ports:
@@ -30,7 +34,10 @@ ports:
 ```
 
 ## Git/Gitea
-[`gitea.yml`](gitea.yml) is a self-hosted GitHub replacement. By default, all of its data is stored in `$HOME/gitea`. If you wish to store the data in a different location, update the Compose file accordingly. In this example, I'll have it store data in `/mnt/dockerdata/gitea`:
+[`gitea.yml`](gitea.yml) is a self-hosted GitHub replacement.
+
+### Data directory change
+By default, all of its data is stored in `$HOME/gitea`. If you wish to store the data in a different location, update the Compose file accordingly. In this example, I'll have it store data in `/mnt/dockerdata/gitea`:
 ```diff
 volumes:
 -  - $HOME/gitea:/data
