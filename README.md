@@ -19,7 +19,7 @@ $ git clone https://github.com/wbreiler/homelab-docker.git
 ```shell
 $ cd homelab-docker
 ```
-3. Customize the files in [/containers](containers/)
+3. Customize the files in [/containers](containers/)<sup>2</sup>
 
 4. Run the [setup script](scripts/setup.sh), and follow the prompts:
 ```shell
@@ -41,4 +41,5 @@ Contributions are welcome! Please fork this repository and submit a pull request
 This project is licensed under the [MIT License](LICENSE).
 
 ## Notes
-<sup>1</sup>: [`setup.sh`](scripts/setup.sh) is written with Debian-based distros in mind. Therefore, it should work with Debian, Ubuntu, and their variants. If you wish to create a PR or fork with support for other distros, go for it!
+<sup>1</sup>: [`setup.sh`](scripts/setup.sh) is written with Debian-based distros in mind. Therefore, it should work with Debian, Ubuntu, and their variants. If you wish to create a PR or fork with support for other distros, go for it!</br>
+<sup>2</sup>: The docker-compose files in [./containers](containers/)
