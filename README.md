@@ -25,7 +25,11 @@ $ cd homelab-docker
 ```shell
 $ sh scripts/setup.sh
 ```
-  - a
+- If you wish to only run a specific container, or don't want to install Cockpit:
+```shell
+$ cd containers
+$ docker compose -f [compose file] up -d
+```
 
 
 ## Services
