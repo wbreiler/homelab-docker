@@ -13,10 +13,10 @@ services:
       - password # optional but required for (1)
     environment:
       - PASSWORD=flame_password
-      - PASSWORD_FILE=$HOME/secrets/password # optional but required for (1)
+      - PASSWORD_FILE=$HOME/password # optional but required for (1)
     restart: unless-stopped
 
 # optional but required for Docker secrets (1)
 secrets:
   password:
-    file: /home/pi/secrets/password
+    file: $HOME/password
