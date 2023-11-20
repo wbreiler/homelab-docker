@@ -46,19 +46,19 @@ if [[ "$response" =~ ^[Yy]$ ]]; then
         read -r continue_response
         if ! [[ "$continue_response" =~ ^[Yy]$ ]]; then
             echo "Exiting script."
-            exit 0
+            return 0
         fi
     fi
 
     install_cockpit
 else
     echo "Installation cancelled."
-    exit 0
+    return 0
 fi
 
 
 # Install Netdata
-sh $pwd/netdata-kickstart.sh --disable-telemetry
+sh $PWD/netdata-kickstart.sh --disable-telemetry
 
 #Function to check if Docker is already installed
 check_docker_installed() {
