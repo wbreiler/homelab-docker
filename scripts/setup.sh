@@ -46,14 +46,14 @@ if [[ "$response" =~ ^[Yy]$ ]]; then
         read -r continue_response
         if ! [[ "$continue_response" =~ ^[Yy]$ ]]; then
             echo "Exiting script."
-            return 0
+            exit 0
         fi
     fi
 
     install_cockpit
 else
     echo "Installation cancelled."
-    return 0
+    exit 0
 fi
 
 
