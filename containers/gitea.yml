@@ -15,7 +15,7 @@ services:
     networks:
       - gitea
     volumes:
-      - $HOME/gitea:/data
+      - /mnt/dockerdata/gitea:/data
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
