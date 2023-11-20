@@ -11,7 +11,7 @@ Below are a list of the Docker Compose files in this directory, and how to use o
 ```diff
 -    secrets:
 -      - password # optional but required for (1)
-    environment:
+-    environment:
 -      - PASSWORD=flame_password
 -      - PASSWORD_FILE=$HOME/password # optional but required for (1)
     restart: unless-stopped
@@ -30,4 +30,11 @@ ports:
 ```
 
 ## Git/Gitea
-[`gitea.yml`](gitea.yml) is a self-hosted GitHub replacement.
+[`gitea.yml`](gitea.yml) is a self-hosted GitHub replacement. By default, all of its data is stored in `$HOME/gitea`. If you wish to store the data in a different location, update the Compose file accordingly. In this example, I'll have it store data in `/mnt/dockerdata/gitea`:
+```diff
+volumes:
+- - $HOME/gitea:/data
++ - /mnt/dockerdata/gitea:/data
+  - /etc/timezone:/etc/timezone:ro
+  - /etc/localtime:/etc/localtime:ro
+```
