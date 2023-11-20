@@ -13,5 +13,4 @@ services:
       - HOMEBRIDGE_CONFIG_UI=1
       - HOMEBRIDGE_CONFIG_UI_PORT=8581
     volumes:
-      - $HOME/homebridge/data:/homebridge
-
+      - /mnt/dockerdata/homebridge/:/homebridge

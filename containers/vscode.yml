@@ -3,14 +3,13 @@ version: "3"
 services:
   code-server:
     container_name: vscode
-    ports: 
+    ports:
       - '8443:8443'
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - '$HOME/vscode/config:/config'
+      - '/mnt/dockerdata/vscode/:/config'
     image: lscr.io/linuxserver/code-server
     restart: unless-stopped
-

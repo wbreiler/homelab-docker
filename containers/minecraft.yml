@@ -11,14 +11,14 @@ services:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
       CF_API_KEY: "$$2a$$10$$L.kxaQIbyN6Q5web2/4fRut3zIxReWFjxjc2mlA/k2PfZwYTagBVa"
-      CF_SLUG: "better-mc-forge-bmc3"
+      CF_SLUG: ""
       DEBUG: "TRUE"
-      MEMORY: "8G"
-      ICON: "https://cdn.discordapp.com/attachments/859595920202006540/1119960834345545818/FB_IMG_1687089861079.jpg"
+      MEMORY: "4G"
+      ICON: ""
       SPAWN_PROTECTION: "0"
-      MOTD: "i'm the cum man"
-      OPS: "Resisterefutilis"
+      MOTD: ""
+      OPS: ""
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - $HOME/minecraft/server:/data
-      - $HOME/minecraft/modpacks:/modpacks
+      - /mnt/dockerdata/minecraft/server:/data
+      - /mnt/dockerdata/minecraft/modpacks:/modpacks
