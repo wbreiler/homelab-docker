@@ -45,3 +45,10 @@ volumes:
   - /etc/timezone:/etc/timezone:ro
   - /etc/localtime:/etc/localtime:ro
 ```
+
+## `/mnt/dockerdata` Usage
+Below are a list of containers that expect there to be a `/mnt/dockerdata` directory:
+- [`gitea.yml`](gitea.yml)
+- [`homebridge.yml`](homebridge.yml)
+- [`minecraft.yml`](minecraft.yml)
+- [`vscode.yml`](vscode.yml)
