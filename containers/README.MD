@@ -52,3 +52,4 @@ Below are a list of containers that expect there to be a `/mnt/dockerdata` direc
 - [`homebridge.yml`](homebridge.yml)
 - [`minecraft.yml`](minecraft.yml)
 - [`vscode.yml`](vscode.yml)
+- [`lancache.yml`](lancache.yml)
