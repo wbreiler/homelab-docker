@@ -7,7 +7,7 @@ This directory contains the Docker Compose files I have currently running in my 
 Below are a list of a couple of the Docker Compose files in this directory, and how to use or edit them.
 
 ## Dashboard
-[`dashboard.yml`](dashboard.yml) is a dashboard for all your apps, and can even host bookmarks. By default, data is stored in `$HOME/dashboard`.
+[`dashboard.yml`](./dashboard.yml) is a dashboard for all your apps, and can even host bookmarks. By default, data is stored in `$HOME/dashboard`.
 
 #### Password file
 If you wish to have it password protected, you must have a `password` file in your `$HOME` directory. If you wish to not have it password protected, remove the following:
@@ -48,11 +48,12 @@ volumes:
 
 ## `/mnt/dockerdata` Usage
 Below are a list of containers that expect there to be a `/mnt/dockerdata` directory:
-- [`gitea.yml`](gitea.yml)
-- [`homebridge.yml`](homebridge.yml)
-- [`minecraft.yml`](minecraft.yml)
-- [`vscode.yml`](vscode.yml)
-- [`lancache.yml`](lancache.yml)<sup>1</sup>
+- [`gitea.yml`](./gitea.yml)
+- [`homebridge.yml`](./homebridge.yml)
+- [`minecraft.yml`](./minecraft.yml)
+- [`vscode.yml`](./vscode.yml)
+- [`lancache.yml`](./lancache.yml)<sup>1</sup>
+- [`netboot.xyz`](./netboot.xyz)
 
 ## Notes
-<sup>1</sup>: This is stored in [`.cacheenv`](.cacheenv) under `CACHE_ROOT`.
+<sup>1</sup>: This is stored in [`.cacheenv`](./.cacheenv) under `CACHE_ROOT`.
