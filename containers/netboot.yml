@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+  netbootxyz:
+    image: ghcr.io/netbootxyz/netbootxyz
+    container_name: netboot
+    environment:
+      - MENU_VERSION=2.0.47
+    volumes:
+      - /mnt/dockerdata/netboot/config:/config
+      - /mnt/dockerdata/netboot/assets:/assets
+    ports:
+      - 3001:3000
+      - 69:69/udp
+      - 8080:80
+    restart: unless-stopped
+      
